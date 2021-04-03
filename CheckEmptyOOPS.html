@@ -1,0 +1,34 @@
+ 
+ <script>
+    function test(){
+
+        var txt1=document.getElementById("txt1");
+        var txt2=document.getElementById("txt2");
+        var txt3=document.getElementById("txt3");
+        var txt4=document.getElementById("txt4");
+
+
+        checkEmpty(txt1);
+        checkEmpty(txt2);
+        checkEmpty(txt3);
+        checkEmpty(txt4);
+        
+    }
+
+    function checkEmpty(textbox){
+        if(textbox.value.length==0){
+            alert("Enter value in "+textbox.id);
+        }
+        
+    }
+
+</script>
+
+<input type="text" id="txt1"/> <br/>
+<input type="text" id="txt2"/> <br/>
+<input type="text" id="txt3"/> <br/>
+<input type="text" id="txt4"/> <br/>
+
+
+
+<button onclick="test();">Click here</button>
